@@ -1,0 +1,37 @@
+[
+    {
+        "question": "Which language is primarily used for web development?",
+        "options": ["Python", "JavaScript", "C++", "Swift"],
+        "answer": "JavaScript"
+    },
+    {
+        "question": "Which of the following is a version control system?",
+        "options": ["Git", "Docker", "Kubernetes", "Jenkins"],
+        "answer": "Git"
+    },
+    {
+        "question": "What is the main purpose of HTML?",
+        "options": ["Styling web pages", "Structuring web content", "Server-side scripting", "Database management"],
+        "answer": "Structuring web content"
+    },
+    {
+        "question": "Which of the following is a JavaScript framework?",
+        "options": ["Django", "React", "Laravel", "Spring"],
+        "answer": "React"
+    },
+    {
+        "question": "Which language is used for styling web pages?",
+        "options": ["HTML", "JavaScript", "CSS", "Python"],
+        "answer": "CSS"
+    },
+    {
+        "question": "Which of the following is a database management system?",
+        "options": ["Node.js", "MongoDB", "Angular", "TensorFlow"],
+        "answer": "MongoDB"
+    },
+    {
+        "question": "What is the file extension for a Python file?",
+        "options": [".java", ".py", ".html", ".css"],
+        "answer": ".py"
+    }
+]

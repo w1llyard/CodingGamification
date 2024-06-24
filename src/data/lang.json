@@ -1,0 +1,241 @@
+{
+  "python": {
+    "title": "Python",
+    "content": [
+      {
+        "type": "h2",
+        "text": "Character Control Example"
+      },
+      {
+        "type": "p",
+        "text": "In Python, you can create a sequence of characters based on a defined pattern and print the result using loops. The following example demonstrates this."
+      },
+      {
+        "type": "code",
+        "text": [
+          "sequence = [",
+          "    { 'char': 'U', 'count': 3 },",
+          "    { 'char': 'R', 'count': 2 },",
+          "]",
+          "",
+          "result = ''",
+          "",
+          "for item in sequence:",
+          "    char = item['char']",
+          "    count = item['count']",
+          "    result += char * count",
+          "",
+          "print(result)"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "`sequence`: A list of dictionaries, each containing a character and its repetition count.\n`result`: An empty string to store the final sequence.\nLoop through each dictionary in `sequence`, and append the character multiplied by its count to `result`.\nFinally, print the `result`."
+      }
+    ]
+  },
+  "csharp": {
+    "title": "C#",
+    "content": [
+      {
+        "type": "h2",
+        "text": "Character Control Example"
+      },
+      {
+        "type": "p",
+        "text": "In C#, you can create a sequence of characters based on a defined pattern and print the result using loops. The following example demonstrates this."
+      },
+      {
+        "type": "code",
+        "text": [
+          "using System;",
+          "using System.Collections.Generic;",
+          "",
+          "class Program",
+          "{",
+          "    static void Main()",
+          "    {",
+          "        var sequence = new List<(char Char, int Count)>",
+          "        {",
+          "            ('U', 3),",
+          "            ('R', 2)",
+          "        };",
+          "",
+          "        string result = string.Empty;",
+          "",
+          "        foreach (var item in sequence)",
+          "        {",
+          "            for (int i = 0; i < item.Count; i++)",
+          "            {",
+          "                result += item.Char;",
+          "            }",
+          "        }",
+          "",
+          "        Console.WriteLine(result);",
+          "    }",
+          "}"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "`sequence`: A list of tuples, each containing a character and its repetition count.\n`result`: An empty string to store the final sequence.\nLoop through each tuple in `sequence`, and append the character the specified number of times to `result`.\nFinally, print the `result`."
+      }
+    ]
+  },
+  "java": {
+    "title": "Java",
+    "content": [
+      {
+        "type": "h2",
+        "text": "Character Control Example"
+      },
+      {
+        "type": "p",
+        "text": "In Java, you can create a sequence of characters based on a defined pattern and print the result using loops. The following example demonstrates this."
+      },
+      {
+        "type": "code",
+        "text": [
+          "public class Main {",
+          "    public static void main(String[] args) {",
+          "        String[][] sequence = {",
+          "            {\"U\", \"3\"},",
+          "            {\"R\", \"2\"}",
+          "        };",
+          "",
+          "        String result = \"\";",
+          "",
+          "        for (String[] item : sequence) {",
+          "            String character = item[0];",
+          "            int count = Integer.parseInt(item[1]);",
+          "            for (int i = 0; i < count; i++) {",
+          "                result += character;",
+          "            }",
+          "        }",
+          "",
+          "        System.out.println(result);",
+          "    }",
+          "}"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "`sequence`: A 2D array, each sub-array containing a character and its repetition count as strings.\n`result`: An empty string to store the final sequence.\nLoop through each sub-array in `sequence`, parse the count, and append the character the specified number of times to `result`.\nFinally, print the `result`."
+      }
+    ]
+  },
+  "javascript": {
+    "title": "JavaScript",
+    "content": [
+      {
+        "type": "h2",
+        "text": "Character Control Example"
+      },
+      {
+        "type": "p",
+        "text": "In JavaScript, you can create a sequence of characters based on a defined pattern and print the result using loops. The following example demonstrates this."
+      },
+      {
+        "type": "code",
+        "text": [
+          "const sequence = [",
+          "    { char: 'U', count: 3 },",
+          "    { char: 'R', count: 2 },",
+          "];",
+          "",
+          "let result = '';",
+          "",
+          "for (let i = 0; i < sequence.length; i++) {",
+          "    const { char, count } = sequence[i];",
+          "    for (let j = 0; j < count; j++) {",
+          "        result += char;",
+          "    }",
+          "}",
+          "",
+          "console.log(result);"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "`sequence`: An array of objects, each containing a character and its repetition count.\n`result`: An empty string to store the final sequence.\nLoop through each object in `sequence`, and append the character the specified number of times to `result`.\nFinally, print the `result`."
+      }
+    ]
+  },
+  "typescript": {
+    "title": "TypeScript",
+    "content": [
+      {
+        "type": "h2",
+        "text": "Character Control Example"
+      },
+      {
+        "type": "p",
+        "text": "In TypeScript, you can create a sequence of characters based on a defined pattern and print the result using loops. The following example demonstrates this."
+      },
+      {
+        "type": "code",
+        "text": [
+          "const sequence: { char: string, count: number }[] = [",
+          "    { char: 'U', count: 3 },",
+          "    { char: 'R', count: 2 },",
+          "];",
+          "",
+          "let result: string = '';",
+          "",
+          "for (let i = 0; i < sequence.length; i++) {",
+          "    const { char, count } = sequence[i];",
+          "    for (let j = 0; j < count; j++) {",
+          "        result += char;",
+          "    }",
+          "}",
+          "",
+          "console.log(result);"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "`sequence`: An array of objects, each containing a character and its repetition count.\n`result`: An empty string to store the final sequence.\nLoop through each object in `sequence`, and append the character the specified number of times to `result`.\nFinally, print the `result`."
+      }
+    ]
+  },
+  "php": {
+    "title": "PHP",
+    "content": [
+      {
+        "type": "h2",
+        "text": "Character Control Example"
+      },
+      {
+        "type": "p",
+        "text": "In PHP, you can create a sequence of characters based on a defined pattern and print the result using loops. The following example demonstrates this."
+      },
+      {
+        "type": "code",
+        "text": [
+          "<?php",
+          "$sequence = [",
+          "    [ 'char' => 'U', 'count' => 3 ],",
+          "    [ 'char' => 'R', 'count' => 2 ],",
+          "];",
+          "",
+          "$result = '';",
+          "",
+          "foreach ($sequence as $item) {",
+          "    $char = $item['char'];",
+          "    $count = $item['count'];",
+          "    for ($i = 0; $i < $count; $i++) {",
+          "        $result .= $char;",
+          "    }",
+          "}",
+          "",
+          "echo $result;",
+          "?>"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "`sequence`: An array of associative arrays, each containing a character and its repetition count.\n`result`: An empty string to store the final sequence.\nLoop through each associative array in `sequence`, and append the character the specified number of times to `result`.\nFinally, print the `result`."
+      }
+    ]
+  }
+}

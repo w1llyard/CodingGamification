@@ -1,0 +1,185 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.custom-navbar {
+
+  width: 100%;
+  height: 70px;
+  display: flex;
+  box-sizing: border-box;
+  padding: 20px 30px;
+  z-index: 2;
+
+  background-image: url("https://www.playcodequest.com/assets/site/header-bevel.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-transform: capitalize;
+}
+
+:root {
+  --button_padding: 1em;
+  --text_stroke: 0.125em;
+  --border_width: 0.25em;
+
+  --border_color: #10141F;
+  --text_color: #EBEDE9;
+
+
+
+  --button_height: 3em;
+}
+
+/* styles/globals.css */
+.custom-artboard {
+  box-shadow: 5px 5px #000;
+}
+
+.red {
+  --button_background: #A53030;
+  --button_dark_shadow: #730D0D;
+  --button_light_shadow: #E87D7D;
+}
+
+.blue {
+  --button_background: #2f5169;
+  --button_dark_shadow: #253A5E;
+  --button_light_shadow: #A4DDDB;
+}
+
+.green {
+  --button_background: #75A743;
+  --button_dark_shadow: #25562E;
+  --button_light_shadow: #D0DA91;
+}
+
+.yellow {
+  --button_background: #BE772B;
+  --button_dark_shadow: #602C2C;
+  --button_light_shadow: #E8C170;
+}
+
+
+.button {
+  font-size: 1rem;
+  display: inline-block;
+  padding: 10px;
+
+}
+
+.button button {
+  /*  font size and padding  */
+  font-size: 1em;
+  line-height: 1.3em;
+  padding: 0 calc(var(--button_padding)*2);
+  width: 100%;
+  height: var(--button_height);
+
+  /*  colours  */
+  background: var(--button_background);
+  color: var(--text_color);
+
+  /*  text  */
+  font-family: var(--font);
+  text-shadow: calc(var(--text_stroke)*-1) calc(var(--text_stroke)*-1) 0 #000,
+    var(--text_stroke) calc(var(--text_stroke)*-1) 0 #000,
+    calc(var(--text_stroke)*-1) var(--text_stroke) 0 #000,
+    var(--text_stroke) var(--text_stroke) 0 #000;
+
+  /*  border  */
+  border: none;
+  border-top: var(--border_width) solid var(--border_color);
+  border-bottom: var(--border_width) solid var(--border_color);
+
+  /*  box-shadow  */
+  box-shadow: 0 calc(var(--border_width)*-1) var(--button_dark_shadow) inset,
+    0 var(--border_width) var(--button_light_shadow) inset;
+
+  /*  cursor  */
+  cursor: pointer;
+
+  /*  position  */
+  position: relative;
+}
+
+.button button:focus {
+  outline: none;
+}
+
+
+.button button::after,
+.button button::before {
+  /*  content  */
+  content: "";
+
+  /*  dimensions  */
+  width: var(--border_width);
+  height: calc(100% - var(--border_width)*2);
+
+  /*  colours  */
+  background: var(--button_background);
+
+  /*  border  */
+  border-top: var(--border_width) solid var(--border_color);
+  border-bottom: var(--border_width) solid var(--border_color);
+
+  /*  box-shadow */
+  box-shadow: 0 calc(var(--border_width)*-1) var(--button_dark_shadow) inset,
+    0 var(--border_width) var(--button_light_shadow) inset;
+
+  /*  positions  */
+  position: absolute;
+  top: 0;
+}
+
+.button button::after {
+  right: calc(var(--border_width)*-2);
+  border-right: var(--border_width) solid var(--border_color);
+}
+
+.button button::before {
+  left: calc(var(--border_width)*-2);
+  border-left: var(--border_width) solid var(--border_color);
+}
+
+.button button:active,
+.button button:active::after,
+.button button:active::before {
+  box-shadow: none;
+}
+
+.bg-content1, .bg-default-100{
+  background-color: #1C1C1C !important;
+}
+
+.custom-select .nextui-select-label,
+.custom-select .nextui-select-placeholder {
+  color: white !important;
+}
+
+.custom-select .nextui-select-item {
+  color: white !important;
+}
+
+
+.screenSize {
+  height: 50vh; /* 50% of the viewport height */
+}
