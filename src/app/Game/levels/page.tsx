@@ -126,7 +126,7 @@ const GamePage = () => {
 
         <div className="lg:col-span-2">
           
-          <StickyScroll content={content} />
+          <StickyScroll content={content} contentClassName="s"/>
 
         </div>
 
