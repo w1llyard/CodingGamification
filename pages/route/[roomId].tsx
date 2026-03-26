@@ -5,7 +5,7 @@ import io, { Socket } from 'socket.io-client';
 import CodeEditor from './code/CodeEditor';
 import Output from './code/Output';
 import { editor as monacoEditor } from 'monaco-editor';
-import { Problem } from './types';
+import { Problem } from '@/lib/types';
 
 let socket: Socket;
 

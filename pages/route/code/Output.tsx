@@ -1,7 +1,7 @@
 import { useState, RefObject } from "react";
-import { executeCode } from "../apiGetCode";
 import * as monaco from "monaco-editor";
 import { Socket } from "socket.io-client";
+import { executeCode } from "@/lib/apiGetCode";
 
 interface OutputProps {
   editorRef: RefObject<monaco.editor.IStandaloneCodeEditor | null>;
@@ -47,7 +47,7 @@ const Output = ({ editorRef, language, setOutput, output, problem, roomId, usern
         room_id: roomId,
         user: username,
         passed_tests: passedTests,
-        total_tests: problem.test_cases.length
+        total_tests: problem.test_cases?.length || []
       });
     } catch (error: any) {
       setIsError(true);
@@ -63,7 +63,7 @@ const Output = ({ editorRef, language, setOutput, output, problem, roomId, usern
         {isLoading ? "Running..." : "Run Code"}
       </button>
       <div className={`output-container ${isError ? 'error' : ''}`}>
-        {output.length > 0 ? (
+        {output?.length > 0 ? (
           output.map((line, i) => <p key={i}>{line}</p>)
         ) : (
           'Click "Run Code" to see the output here'

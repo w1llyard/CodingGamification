@@ -1,5 +1,5 @@
+import { LANGUAGE_VERSIONS } from "@/lib/constants";
 import React from "react";
-import { LANGUAGE_VERSIONS } from "./constants";
 
 const languages = Object.entries(LANGUAGE_VERSIONS);
 
