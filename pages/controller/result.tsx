@@ -8,7 +8,7 @@ const Result = () => {
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
       <h1 className="text-4xl">Game Over</h1>
       {winner === "It's a tie!" ? (
-        <h2 className="text-2xl mt-4">It's a tie!</h2>
+        <h2 className="text-2xl mt-4">{"It's a tie!"}</h2>
       ) : (
         <h2 className="text-2xl mt-4">Winner: {winner}</h2>
       )}
